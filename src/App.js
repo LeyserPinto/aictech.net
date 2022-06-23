@@ -1,10 +1,15 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { Home } from "./pages";
 import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <NavBar />
+      <BrowserRouter>
+        <NavBar />
+        <Home />
+      </BrowserRouter>
     </>
   );
 }
